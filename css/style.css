@@ -1,0 +1,32 @@
+:root {
+    --one-text-color: #303030;
+    --second-text-color: #555555;
+    --akcent-text-color: #9da4bd;
+    --backgraund-color: #191c26;
+    --akcent-detal-color: #ff6c00;
+    --contrast-text-color: #ffffff;
+    --decor-text-color: rgba(157, 164, 189, 0.6);
+    --decor-var-text-color: rgba(157, 164, 189, 0.4);
+
+    --font-family-one: 'Open Sans', sans-serif;
+    --font-family-title: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--font-family-one);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: var(--one-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
