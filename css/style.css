@@ -1,32 +1,119 @@
 :root {
-    --one-text-color: #303030;
-    --second-text-color: #555555;
-    --akcent-text-color: #9da4bd;
-    --backgraund-color: #191c26;
-    --akcent-detal-color: #ff6c00;
-    --contrast-text-color: #ffffff;
-    --decor-text-color: rgba(157, 164, 189, 0.6);
-    --decor-var-text-color: rgba(157, 164, 189, 0.4);
+  --one-text-color: #303030;
+  --second-text-color: #555555;
+  --akcent-text-color: #9da4bd;
+  --backgraund-color: #191c26;
+  --akcent-detal-color: #ff6c00;
+  --contrast-text-color: #ffffff;
+  --decor-text-color: rgba(157, 164, 189, 0.6);
+  --decor-var-text-color: rgba(157, 164, 189, 0.4);
 
-    --font-family-one: 'Open Sans', sans-serif;
-    --font-family-title: 'Raleway', sans-serif;
+  --font-family-one: "Open Sans", sans-serif;
+  --font-family-title: "Raleway", sans-serif;
 }
 
 body {
-    font-family: var(--font-family-one);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.66;
-    letter-spacing: 0.02em;
-    color: var(--one-text-color);
+  font-family: var(--font-family-one);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--one-text-color);
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
+}
+.nav-header {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--contrast-text-color);
+  background-color: #303030;
 }
 
+.button-booking {
+  font-family: var(--font-family-one);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--one-text-color);
+  border: 1px solid var(--akcent-detal-color);
+   border-radius: 25px;
+}
 
+.button-booking.nav {
+    color: var(--contrast-text-color);
+    background-color: transparent;
+
+}
+
+.detal-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--one-text-color);
+}
+
+.detal-text.primery {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.social-hiro {
+  font-family: var(--font-family-one);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--one-text-color);
+}
+
+.hero-title {
+  font-family: var(--font-family-title);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--contrast-text-color);
+  background: rgba(25, 28, 38, 0.2);
+}
+
+.hero-text {
+  color: var(--akcent-text-color);
+}
+
+.section-title {
+  font-family: var(--font-family-title);
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--one-text-color);
+}
+
+.section-text {
+    color: var(--second-text-color);
+}
+
+.section-comment {
+font-size: 14px;
+line-height: 1.857;
+color: var(--second-text-color);
+}
+
+.section-title.weit {
+    color: var(--contrast-text-color);
+    background-color: var(--second-text-color);
+}
