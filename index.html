@@ -11,22 +11,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="#"> 
         <img src="./img/Logo.svg" alt="Logo">
         </a>
         <nav class="nav-header">
             <ul class="header-list list">
-                <li class="header-nav-item"><a href="#"></a>About</li>
-                <li class="header-nav-item"><a href="#"></a>Services and prices</li>
-                <li class="header-nav-item"><a href="#"></a>Barbers</li>
-                <li class="header-nav-item"><a href="#"></a>Contacts</li>
+                <li class="header-nav-link"><a href="#"></a>About</li>
+                <li class="header-nav-link"><a href="#"></a>Services and prices</li>
+                <li class="header-nav-link"><a href="#"></a>Barbers</li>
+                <li class="header-nav-link"><a href="#"></a>Contacts</li>
             </ul>
             <div >
-                <a class="contacts-item link" href="tel:380441111111">+38 044 111 11 11</a>
+                <a class="header-contakt link" href="tel:380441111111">+38 044 111 11 11</a>
                 <button type="button" class="button-booking nav">Online-booking</button>
             </div>
         </nav>
@@ -34,9 +37,13 @@
     <main>
         <!-- Hero -->
         <section class="hero">
-            <ul class="social-hero list">
-                <li><a href="#" target="_blank" rel="noreferrer noopener"></a>Instagram</li>
-                <li><a href="#" target="_blank" rel="noreferrer noopener"></a>Youtube</li>
+            <ul class="media-list list">
+                <li class="media-item">
+                    <a lass="media-link link" href="#"></a>Instagram
+                </li>
+                <li class="media-item">
+                    <a lass="media-link link" href="#"></a>Youtube
+                </li>
             </ul>
             <p class="detal-text primery">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>

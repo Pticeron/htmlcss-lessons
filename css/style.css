@@ -14,47 +14,86 @@
 
 body {
   font-family: var(--font-family-one);
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.66;
+  line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: var(--one-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
+  color: currentColor;
 }
-.nav-header {
+
+.header,
+.hero {
+  background-color: #555555;
+}
+
+.header-nav-link,
+.header-contakt {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
 
   color: var(--contrast-text-color);
-  background-color: #303030;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contakt:hover,
+.header-contakt:focus {
+  color: var(--akcent-detal-color)
 }
 
 .button-booking {
-  font-family: var(--font-family-one);
+  min-width: 160px;
+  min-height: 40px;
+  padding: 11px 19px;
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: calc(16 / 12);
   letter-spacing: 0.09em;
   text-transform: uppercase;
+
+  background-color: transparent;
   color: var(--one-text-color);
+  cursor: pointer;
   border: 1px solid var(--akcent-detal-color);
-   border-radius: 25px;
+  border-radius: 25px;
 }
 
 .button-booking.nav {
-    color: var(--contrast-text-color);
-    background-color: transparent;
-
+  color: var(--contrast-text-color);
 }
+
+.button-booking:hover,
+.button-booking:focus {
+  background-color: var(--akcent-detal-color);
+}
+
 
 .detal-text {
   font-style: normal;
@@ -69,7 +108,7 @@ body {
   color: rgba(157, 164, 189, 0.6);
 }
 
-.social-hiro {
+.media-item {
   font-family: var(--font-family-one);
   font-weight: 600;
   font-size: 11px;
@@ -79,17 +118,22 @@ body {
   color: var(--one-text-color);
 }
 
+.media-item:hover,
+.media-item:focus {
+  color: var(--akcent-detal-color)
+}
+
 .hero-title {
   font-family: var(--font-family-title);
   font-weight: 700;
   font-size: 72px;
-  line-height: 1.18;
+  line-height: calc(85 / 72);
   letter-spacing: 0.05em;
   color: var(--contrast-text-color);
-  background: rgba(25, 28, 38, 0.2);
 }
 
 .hero-text {
+  width: 357px;
   color: var(--akcent-text-color);
 }
 
@@ -108,12 +152,13 @@ body {
 }
 
 .section-comment {
-font-size: 14px;
-line-height: 1.857;
-color: var(--second-text-color);
+
+  font-size: 14px;
+  line-height: 1.857;
+  color: var(--second-text-color);
 }
 
 .section-title.weit {
-    color: var(--contrast-text-color);
-    background-color: var(--second-text-color);
+  color: var(--contrast-text-color);
+  background-color: var(--second-text-color);
 }
